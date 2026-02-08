@@ -8,250 +8,323 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-dark">
+<body>
 
-<!-- Hamburger for mobile -->
-<div class="hamburger hide-lg">
-  <i class="fas fa-bars"></i>
-</div>
-
-<!-- Sidebar -->
-<nav class="side txt-ctr">
-  <img src="IMG_new.JPG" alt="Profile Picture" class="img">
-  <a href="#home" class="nav-item pad-sm bg-dark">
-    <i class="fas fa-home ico-xlg"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="nav-item pad-sm">
-    <i class="fas fa-user ico-xlg"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#education" class="nav-item pad-sm">
-    <i class="fas fa-graduation-cap ico-xlg"></i>
-    <p>EDUCATION</p>
-  </a>
-  <a href="#projects" class="nav-item pad-sm">
-    <i class="fas fa-code ico-xlg"></i>
-    <p>PROJECTS</p>
-  </a>
-  <a href="#skills" class="nav-item pad-sm">
-    <i class="fas fa-cogs ico-xlg"></i>
-    <p>SKILLS</p>
-  </a>
-  <a href="#achievements" class="nav-item pad-sm">
-    <i class="fas fa-trophy ico-xlg"></i>
-    <p>ACHIEVEMENTS</p>
-  </a>
-  <a href="#positions" class="nav-item pad-sm">
-    <i class="fas fa-briefcase ico-xlg"></i>
-    <p>POSITIONS</p>
-  </a>
-  <a href="#contact" class="nav-item pad-sm">
-    <i class="fas fa-envelope ico-xlg"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens -->
-<div class="nav-top hide-lg" id="myNavbar">
-  <div class="nav-bar txt-ctr">
-    <a href="#home" class="nav-item">HOME</a>
-    <a href="#about" class="nav-item">ABOUT</a>
-    <a href="#education" class="nav-item">EDUCATION</a>
-    <a href="#projects" class="nav-item">PROJECTS</a>
-    <a href="#skills" class="nav-item">SKILLS</a>
-    <a href="#achievements" class="nav-item">ACHIEVEMENTS</a>
-    <a href="#contact" class="nav-item">CONTACT</a>
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">Goukar Saikiran</div>
+    <div class="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
   </div>
-</div>
+</nav>
 
 <!-- Page Content -->
 <div class="main">
   <!-- Header/Home -->
-  <header class="txt-ctr pad-lg bg-dark section" id="home">
-    <h1 class="jumbo"><span class="hide-sm">I'm</span> Goukar Saikiran</h1>
-    <h3>Computer Science Engineering Student & Web Developer</h3>
-    <img src="IMG_86195-photoaidcom-cropped.JPG" alt="Profile" height="300px">
+  <header class="hero section" id="home">
+    <div class="hero-content">
+      <div>
+        <h1 class="jumbo">Goukar Saikiran</h1>
+        <p class="lead">Computer Science Engineering Student • Web Developer • ML Enthusiast</p>
+        <div class="cta">
+          <a class="btn primary" href="GOUKAR-SAI-KIRAN-Resume.pdf" download>Download Resume</a>
+          <a class="btn outline" href="#projects">View Projects</a>
+        </div>
+      </div>
+      <img src="IMG_86195-photoaidcom-cropped.JPG" alt="Profile" class="profile-large">
+    </div>
   </header>
 
   <!-- About Section -->
-  <div class="txt-grey pad-lg section" id="about">
-    <h2 class="txt-lt-grey">About Me</h2>
-    <hr class="line">
-    <p>I'm a dedicated Computer Science Engineering student at Anurag University with an exceptional academic record. My passion for technology drives me to continuously explore new programming languages and frameworks.</p>
-    <p>Seeking a position in a dynamic organization where I can launch my career and build a strong skill set. Passionate about problem-solving and innovation, I aim to contribute creativity and technical expertise to challenging projects while continuously learning in a collaborative environment.</p>
-    <p><strong>Date of Birth:</strong> 30 May 2004</p>
-    <p><strong>Nationality:</strong> Indian</p>
-    <p><strong>Languages Known:</strong> English, Telugu, Hindi, Marathi</p>
-  </div>
+  <section class="section container" id="about">
+    <div class="card about-card">
+      <h2>About Me</h2>
+      <p>I'm a dedicated Computer Science Engineering student at Anurag University with strong academics and a passion for building web applications and exploring machine learning. I enjoy turning ideas into working products and continuously learning new technologies.</p>
+      <p>Seeking a position in a dynamic organization where I can launch my career and build a strong skill set. Passionate about problem-solving and innovation, with hands-on experience in hackathons and tech events. Eager to apply my technical expertise, teamwork, and creativity to contribute to challenging projects while continuously learning and growing in a collaborative environment.</p>
+      <div class="meta-grid">
+        <div class="meta-item"><span class="meta-key">DOB</span><span class="meta-value">30 May 2004</span></div>
+        <div class="meta-item"><span class="meta-key">Location</span><span class="meta-value">Hyderabad, India</span></div>
+        <div class="meta-item"><span class="meta-key">Languages</span><span class="meta-value">English, Telugu, Hindi</span></div>
+        <div class="meta-item"><span class="meta-key">Email</span><span class="meta-value"><a href="mailto:22eg105a27@anurag.edu.in">22eg105a27@anurag.edu.in</a></span></div>
+      </div>
+    </div>
+  </section>
 
   <!-- Education Section -->
-  <div class="txt-grey pad-lg section" id="education">
-    <h2 class="txt-lt-grey">Education</h2>
-    <hr class="line">
-    <h4>B.Tech in Computer Science and Engineering</h4>
-    <p>Anurag University, Hyderabad, India | 2022 - Present | CGPA: 8.71</p>
-    <h4>12th (MPC)</h4>
-    <p>Abhyudaya Junior College, Pipparwada, Adilabad | 2022 | Percentage: 95.9%</p>
-    <h4>10th (SSC)</h4>
-    <p>Abhyudaya High School, Pipparwada, Adilabad | 2020 | Percentage: 95%</p>
-  </div>
+  <section class="section container" id="education">
+    <h2>Education</h2>
+    <div class="cards">
+      <div class="card small">
+        <h4>B.Tech in Computer Science and Engineering</h4>
+        <p>Anurag University | 2022 - Present</p>
+        <p><strong>CGPA:</strong> 8.73</p>
+      </div>
+      <div class="card small">
+        <h4>Inter(12th)/MPC</h4>
+        <p>Abhyudaya Junior College | 2022</p>
+        <p><strong>Percentage:</strong> 95.9%</p>
+      </div>
+      <div class="card small">
+        <h4>SSC(10th)</h4>
+        <p>Abhyudaya High School | 2020</p>
+        <p><strong>Percentage:</strong> 95%</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Projects Section -->
-  <div class="txt-grey pad-lg section" id="projects">
-    <h2 class="txt-lt-grey">Projects</h2>
-    <hr class="line">
-    <h4>Student Portal | Feb 2025</h4>
-    <ul>
-      <li>Developed a web-based portal for managing academic records, course registration, and attendance.</li>
-      <li>Implemented user authentication, grade tracking, and real-time notifications.</li>
-      <li>Built with HTML, CSS, JavaScript, React (front-end) and Node.js, Express.js (back-end).</li>
-      <li>Integrated SQL*Plus for data storage and added security features like encryption and role-based access.</li>
-    </ul>
-     <h4>Personal Portfolio Website | Mar 2025</h4>
-  <ul>
-    <li>Designed and developed a responsive front-end portfolio using HTML, CSS, and JavaScript to showcase my projects, skills, and achievements.</li>
-    <li>Implemented interactive UI components to enhance user experience and ensure cross-device compatibility.</li>
-    <li>Deployed the portfolio on Vercel: <a href="https://portfolio-goukar-saikiran.vercel.app/" target="_blank">https://portfolio-goukar-saikiran.vercel.app/</a></li>
-  </ul>
+  <section class="section container" id="projects">
+    <h2>Projects</h2>
+    <div class="cards project-grid">
+      <article class="card project" data-title="Student Portal">
+        <h4>Student Portal</h4>
+        <p>Web portal for academic records, course registration and notifications. Led a 5-member team to develop this full-stack application.</p>
+        <p class="muted">Tech: React, Node.js, Express, SQL, HTML/CSS/JS</p>
+        <button class="btn outline view-more">Details</button>
+      </article>
 
-  <!-- Project 3 -->
-  <h4>Sustainable Travel Planner | Apr 2025</h4>
-  <ul>
-    <li>Developed a full-stack web application to promote eco-friendly travel planning and responsible tourism.</li>
-    <li>Implemented CRUD operations to manage destination data and user preferences.</li>
-    <li>Suggested sustainable options like green transport, eco-certified stays, and low-impact dining.</li>
-    <li>Enabled smart itinerary planning with a focus on carbon footprint reduction.</li>
-  </ul>
-  </div>
+      <article class="card project" data-title="Healthcare Analytics: Predictive Modeling for Early Disease Detection">
+        <h4>Healthcare Analytics: Predictive Modeling for Early Disease Detection</h4>
+        <p>Built an Al-based health risk prediction app using Streamlit and Random Forest and Created a simple user interface for quick, early disease risk assessment.</p>
+        <p class="muted">Tech: AI, ML, Python Database Design</p>
+        <button class="btn outline view-more">Details</button>
+      </article>
+
+      <article class="card project" data-title="Personal Portfolio">
+        <h4>Personal Portfolio</h4>
+        <p>Responsive portfolio site with smooth animations and interactive UI. Showcases projects, skills, and achievements beautifully across all devices.</p>
+        <p class="muted">Tech: HTML, CSS, JavaScript, Vercel</p>
+        <a class="btn outline" href="https://portfolio-goukar-saikiran.vercel.app/" target="_blank">Visit</a>
+      </article>
+
+      
+    </div>
+  </section>
 
   <!-- Skills Section -->
-  <div class="txt-grey pad-lg section" id="skills">
-    <h2 class="txt-lt-grey">Skills</h2>
-    <hr class="line">
-    <p class="wide">Python</p>
-    <div class="prog-bar"><div class="prog-fill py"></div></div>
-    <p class="wide">Java</p>
-    <div class="prog-bar"><div class="prog-fill java"></div></div>
-    <p class="wide">JavaScript</p>
-    <div class="prog-bar"><div class="prog-fill js"></div></div>
-    <p class="wide">Web Development (HTML, CSS)</p>
-    <div class="prog-bar"><div class="prog-fill web"></div></div>
-    <p class="wide">SQL</p>
-    <div class="prog-bar"><div class="prog-fill sql"></div></div>
-    <p><strong>Other Skills:</strong> C, MATLAB, ML (Sci-kit, Numpy, Pandas), Version Control (Git/GitHub), AI, Mathematical Aptitude</p>
-  </div>
+  <section class="section container" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="skill-head"><span>Java</span><span class="skill-val">90%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-fill="90"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><span>Python</span><span class="skill-val">80%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-fill="80"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><span>JavaScript</span><span class="skill-val">70%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-fill="70"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><span>Web (HTML/CSS)</span><span class="skill-val">90%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-fill="90"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><span>SQL</span><span class="skill-val">80%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-fill="80"></div></div>
+      </div>
+    </div>
+    <p class="muted"><strong>Other:</strong> C, MATLAB, Machine Learning (scikit-learn, NumPy, Pandas), Git/GitHub, AI, Problem Solving</p>
+  </section>
 
   <!-- Achievements Section -->
-  <div class="txt-grey pad-lg section" id="achievements">
-    <h2 class="txt-lt-grey">Achievements</h2>
-    <hr class="line">
-    <ul>
-      <li>Prompt Design in AI - Google Cloud.</li>
-      <li>Certificate of Participation in Hackathon (2025): Built a web-based prototype under 24 hours.</li>
-      <li>Top Performer in JavaScript Programming (2022): Scored highest marks in practical evaluations and projects.</li>
-      <li>Earned 4 Industry Certifications: From Google Cloud, Python, and Cisco in fields like AI, Python, and Networking.</li>
-      <li>Earned the 50-Day Coding Streak Badge on LeetCode, reflecting consistency, dedication, and problem-solving expertise. </li>
-    </ul>
-  </div>
+  <section class="section container" id="achievements">
+    <h2>Achievements & Certifications</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Prompt Design in AI</strong> - Google Cloud Certification</li>
+        <li><strong>Hackathon Participant (2025)</strong> - Built web-based prototype in 24 hours</li>
+        <li><strong>Top Performer in JavaScript (2022)</strong> - Highest marks in practical evaluations</li>
+        <li><strong>4 Industry Certifications</strong> - Google Cloud, Python, Cisco (AI, Networking, Python)</li>
+        <li><strong>50-Day Coding Streak Badge</strong> - LeetCode, reflecting consistency and problem-solving expertise</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Positions of Responsibility Section -->
-  <div class="txt-grey pad-lg section" id="positions">
-    <h2 class="txt-lt-grey">Positions of Responsibility</h2>
-    <hr class="line">
-    <h4>Team Lead - Web Development Project (Student Portal) | 2025</h4>
-    <p>Led a 5-member team to design and develop a web application for academic resource sharing. Handled frontend architecture, version control, history.</p>
-    <h4>Technical Volunteer - University Tech Fest | 2024</h4>
-    <p>Assisted in organizing coding and web development events; mentored participants in basic HTML/CSS and project deployment.</p>
-  </div>
+  <section class="section container" id="positions">
+    <h2>Positions of Responsibility</h2>
+    <div class="cards">
+      <div class="card small">
+        <h4>Team Lead - Web Development Project</h4>
+        <p><strong>2025</strong></p>
+        <p>Led a 5-member team to design and develop the Student Portal web application. Handled frontend architecture, version control, and project coordination.</p>
+      </div>
+      <div class="card small">
+        <h4>Technical Volunteer - University Tech Fest</h4>
+        <p><strong>2024</strong></p>
+        <p>Assisted in organizing coding and web development events. Mentored participants in HTML/CSS and guided project deployment on cloud platforms.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact Section -->
-  <div class="txt-grey pad-lg section" id="contact">
-    <h2 class="txt-lt-grey">Contact Me</h2>
-    <hr class="line">
-    <div>
-      <p>
-        <a href="tel:+918074083445" class="c-link">
-          <i class="fas fa-phone ico-lg txt-lt-grey"></i>
-          Phone: +91 8074083445
-        </a>
-      </p>
-      <p>
-        <i class="fas fa-envelope ico-lg txt-lt-grey"></i>
-        Email: <a href="mailto:22eg105a27@anurag.edu.in">22eg105a27@anurag.edu.in</a>
-      </p>
-      <p>
-        <i class="fab fa-linkedin ico-lg txt-lt-grey"></i>
-        LinkedIn: <a href="https://www.linkedin.com/in/goukar-sai-kiran-96062a2a9/" target="_blank">goukar-saikiran</a>
-      </p>
+  <section class="section container" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div class="card">
+        <h4>Get in touch</h4>
+        <p><i class="fas fa-phone"></i> <a href="tel:+918074083445">+91 8074083445</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:22eg105a27@anurag.edu.in">22eg105a27@anurag.edu.in</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/goukar-sai-kiran-96062a2a9/" target="_blank">LinkedIn Profile</a></p>
+        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/goukar_saikiran/" target="_blank">Instagram</a></p>
+      </div>
+      <form class="card form" id="contactForm">
+        <h4 style="margin-top:0">Send me a message</h4>
+        <input class="inp" type="text" placeholder="Your Name" required name="Name">
+        <input class="inp" type="email" placeholder="Your Email" required name="Email">
+        <input class="inp" type="text" placeholder="Subject" required name="Subject">
+        <textarea class="inp" placeholder="Message" required name="Message" rows="4"></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p class="muted small" id="formStatus" aria-live="polite"></p>
+      </form>
     </div>
-    <p>Let's get in touch. Send me a message:</p>
-    <p><input class="inp" type="text" placeholder="Name" required name="Name"></p>
-    <p><input class="inp" type="text" placeholder="Email" required name="Email"></p>
-    <p><input class="inp" type="text" placeholder="Subject" required name="Subject"></p>
-    <p><input class="inp" type="text" placeholder="Message" required name="Message"></p>
-    <p>
-      <button class="btn" type="button">
-        <i class="fas fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </p>
-  </div>
+  </section>
 
   <!-- Footer -->
   <footer class="txt-grey pad-lg">
-    <i class="fab fa-facebook-f ico-hover" onclick="window.open('https://www.facebook.com/yourprofile', '_blank')"></i>
-    <i class="fab fa-instagram ico-hover" onclick="window.open('https://www.instagram.com/goukar_saikiran/', '_blank')"></i>
-    <i class="fab fa-snapchat-ghost ico-hover" onclick="window.open('https://www.snapchat.com/add/yourprofile', '_blank')"></i>
-    <i class="fab fa-twitter ico-hover" onclick="window.open('https://twitter.com/yourprofile', '_blank')"></i>
-    <i class="fab fa-linkedin ico-hover" onclick="window.open('https://www.linkedin.com/in/goukar-sai-kiran-96062a2a9/', '_blank')"></i>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/goukar-sai-kiran-96062a2a9/" target="_blank"><i class="fab fa-linkedin ico-hover"></i></a>
+      <a href="https://www.instagram.com/goukar_saikiran/" target="_blank"><i class="fab fa-instagram ico-hover"></i></a>
+      <a href="#"><i class="fab fa-facebook-f ico-hover"></i></a>
+    </div>
+    <p class="muted small">© 2026 Goukar Saikiran — Built with curiosity and code.</p>
   </footer>
 </div>
 
+<!-- Modal for project details -->
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close">×</button>
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
 <script>
-  // Hamburger menu toggle
-  const hamburger = document.querySelector('.hamburger');
-  const sidebar = document.querySelector('.side');
-  hamburger.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
+// UI elements
+const hamburger = document.querySelector('.hamburger');
+const sidebar = document.querySelector('.side');
+if (hamburger) hamburger.addEventListener('click', () => sidebar.classList.toggle('active'));
+
+// Smooth scroll and active nav for navbar
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section[id]');
+
+function updateActiveNavLink() {
+  let current = '';
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 120 && rect.bottom >= 120) current = section.id;
   });
-
-  // Dynamic sidebar highlighting
-  const sections = document.querySelectorAll('.section');
-  const navItems = document.querySelectorAll('.nav-item');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      if (pageYOffset >= sectionTop - 40) {
-        current = section.getAttribute('id');
-      }
-    });
-
-    navItems.forEach(item => {
-      item.classList.remove('active');
-      if (item.getAttribute('href').slice(1) === current) {
-        item.classList.add('active');
-      }
-    });
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href').slice(1);
+    link.classList.toggle('active', href === current);
   });
+}
 
-  // Smooth scroll for nav links
-  navItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = item.getAttribute('href').slice(1);
-      const targetSection = document.getElementById(targetId);
-      window.scrollTo({
-        top: targetSection.offsetTop - 40,
-        behavior: 'smooth'
-      });
-      // Close sidebar on mobile after clicking
-      if (window.innerWidth <= 600) {
-        sidebar.classList.remove('active');
-      }
-    });
+window.addEventListener('scroll', updateActiveNavLink);
+updateActiveNavLink();
+
+// Smooth scroll behavior for navbar links
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const id = link.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) {
+      window.scrollTo({top: el.offsetTop - 100, behavior: 'smooth'});
+    }
   });
+});
+
+// Legacy nav items support
+const navItems = document.querySelectorAll('.nav-item');
+navItems.forEach(item => {
+  item.addEventListener('click', e => {
+    if (!item.getAttribute('href')) return;
+    e.preventDefault();
+    const id = item.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) window.scrollTo({top: el.offsetTop - 40, behavior: 'smooth'});
+    if (window.innerWidth <= 800) sidebar.classList.remove('active');
+  });
+});
+
+// Animate skill bars when visible
+const fills = document.querySelectorAll('.prog-fill[data-fill]');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const val = el.getAttribute('data-fill');
+      el.style.width = '0%';
+      setTimeout(()=> el.style.width = val + '%', 50);
+      io.unobserve(el);
+    }
+  });
+}, {threshold: 0.4});
+fills.forEach(f => io.observe(f));
+
+// Contact form (simulated)
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const status = document.getElementById('formStatus');
+    status.textContent = 'Sending...';
+    setTimeout(()=> { status.textContent = 'Message sent — I will reply soon!'; form.reset(); }, 800);
+  });
+}
+
+// Project modal
+const modal = document.getElementById('modal');
+const modalTitle = document.getElementById('modalTitle');
+const modalBody = document.getElementById('modalBody');
+
+const projectDetails = {
+  'Student Portal': '<p>A comprehensive web-based portal for managing academic records, course registration, and attendance. Features include user authentication, grade tracking, real-time notifications, and role-based access control.</p><p><strong>Key Features:</strong> Dashboard, Course Management, Attendance Tracking, Grade View, Real-time Notifications, Secure Login</p>',
+  'Sustainable Travel Planner': '<p>A full-stack web application designed to promote eco-friendly travel planning. Users can plan itineraries with a focus on sustainability, discover green transport options, eco-certified stays, and low-impact dining venues.</p><p><strong>Key Features:</strong> Smart Itinerary Planner, Carbon Footprint Calculator, Eco-friendly Venue Suggestions, Trip Recommendations, User Preferences Storage</p>'
+};
+
+document.querySelectorAll('.project .view-more').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const card = e.target.closest('.project');
+    const title = card.querySelector('h4').textContent;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = projectDetails[title] || '<p>' + card.querySelector('p').textContent + '</p>';
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+  });
+});
+
+document.querySelectorAll('.modal-close, #modal').forEach(el => el.addEventListener('click', (e) => {
+  if (e.target === el || el.classList.contains('modal-close')) { 
+    modal.classList.remove('open'); 
+    modal.setAttribute('aria-hidden', 'true'); 
+  }
+}));
+
+// Theme toggle
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = document.getElementById('themeIcon');
+function setTheme(t){ 
+  document.documentElement.setAttribute('data-theme', t); 
+  localStorage.setItem('theme', t); 
+  themeIcon.className = t==='dark' ? 'fas fa-moon' : 'fas fa-sun'; 
+}
+themeToggle.addEventListener('click', ()=> setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+const saved = localStorage.getItem('theme') || 'dark'; 
+setTheme(saved);
 </script>
 
 </body>
